@@ -6,7 +6,7 @@
 <h1 align="center">🚀 LeetCode Questions Archive</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=DSA+Mastery+Journey;Striver+Sheet+Solutions;Sliding+Window,+DP,+Graphs,+and+More!&center=true&width=500&height=45" />
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=DSA+Mastery+Journey;Leetcode+Solutions;Geeks+For+Geek+POTD+Solution ;Sliding+Window,+DP,+Graphs,+and+More!&center=true&width=500&height=45" />
 </p>
 
 ---
@@ -23,8 +23,4 @@ This repository is a structured and well-maintained collection of my **LeetCode 
 - ...and much more!
 
 All solutions are written in **C++**, with clear problem links and optimal code.
-
----
-
-## 🗂️ Folder Structure
 
