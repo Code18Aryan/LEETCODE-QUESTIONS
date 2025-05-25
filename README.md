@@ -6,8 +6,9 @@
 <h1 align="center">🚀 LeetCode Questions Archive</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=DSA+Mastery+Journey;Leetcode+Solutions;Geeks+For+Geek+POTD+Solution ;Sliding+Window,+DP,+Graphs,+and+More!&center=true&width=500&height=45" />
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=DSA+Mastery+Journey;LeetCode+Solutions;GeeksforGeeks+POTD+Solutions;Sliding+Window,+DP,+Graphs,+and+More!&center=true&width=500&height=45" />
 </p>
+
 
 ---
 
