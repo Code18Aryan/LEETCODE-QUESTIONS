@@ -12,6 +12,8 @@ class Solution {
     int minCost(vector<vector<int>>& houses) {
      
         unordered_map<int,vector<vector<int>>> adj;
+
+        // prims algorithm
         
         int n = houses.size();
         
