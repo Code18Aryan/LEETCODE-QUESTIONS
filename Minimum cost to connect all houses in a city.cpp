@@ -15,6 +15,7 @@ class Solution {
         unordered_map<int,vector<vector<int>>> adj;
 
         // prims algorithm
+        // MST 
         
         int n = houses.size();
         
