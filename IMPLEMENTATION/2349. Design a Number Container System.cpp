@@ -2,6 +2,7 @@ class NumberContainers {
 public:
 
     unordered_map<int,int> idxToNum;
+    // Question
     unordered_map<int, priority_queue<int,vector<int>, greater<int>>> numToIdx;
 
     NumberContainers() {
@@ -38,4 +39,5 @@ public:
  * NumberContainers* obj = new NumberContainers();
  * obj->change(index,number);
  * int param_2 = obj->find(number);
+
  */
