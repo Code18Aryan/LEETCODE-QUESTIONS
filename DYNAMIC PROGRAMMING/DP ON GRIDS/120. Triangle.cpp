@@ -1,47 +1,47 @@
 class Solution {
 public:
 
-    int solve(int row , int col , int n , vector<vector<int>>& nums, vector<vector<int>>& dp){
-         
-          if( row == n-1) return nums[row][col];
-          if(row >= n || col >= n) return 1e9;
+    int findMinumumSum(int i, int j, int n, vector<vector<int>>& triangle, vector<vector<int>>& dp){
 
-          if(dp[row][col] != -1)  return dp[row][col];
+        if(i == n-1) return triangle[i][j];
+        if(j > i) return 1e9;
+        if(dp[i][j] != -1) return dp[i][j];
 
-          int down = nums[row][col] + solve(row + 1 , col , n, nums,dp);
+        int down = triangle[i][j] + findMinumumSum(i+1,j,n,triangle,dp);
+        int downRight = triangle[i][j] + findMinumumSum(i+1,j+1,n,triangle,dp);
 
-          int dia = nums[row][col] + solve(row + 1 , col + 1 ,n, nums , dp);
-
-          return dp[row][col] = min(down , dia);
+        return dp[i][j] = min(down,downRight);
     }
 
-    int minimumTotal(vector<vector<int>>& triangle) {
+
+    int minTriangleSum(vector<vector<int>>& triangle) {
 
         int n = triangle.size();
-        
-        return solve(0,0,triangle,dp);
 
-        if(n == 1) return triangle[0][0];
+        //vector<vector<int>> dp(n, vector<int>(n,-1));
+        // return findMinumumSum(0,0,n,triangle,dp);
 
-        vector<vector<int>> dp( n , vector<int>( n));
+        // Tabulation
 
-        for(int j=0; j<n; j++){
-             
-             dp[n-1][j] = triangle[n-1][j];
+        vector<vector<int>> dp(n, vector<int>(n,-1));
+
+        for(int i=0; i<n; i++){
+
+            dp[n-1][i] = triangle[n-1][i];
         }
 
         for(int i=n-2; i>=0; i--){
-             
-              for(int j=i; j>=0; j--){
-                 
-                  int up = triangle[i][j] + dp[i+1][j];
-                  int dia = triangle[i][j] + dp[i + 1][j +1];
 
-                  dp[i][j] = min(up , dia);
-              }
+            for(int j=i; j>=0; j--){
+
+                int down = triangle[i][j] + dp[i+1][j];
+                int downRight = triangle[i][j] + dp[i+1][j+1];
+
+                dp[i][j] = min(down,downRight);
+            }
         }
 
-         return dp[0][0];
-        
+        return dp[0][0];
+
     }
 };
