@@ -3,8 +3,6 @@ public:
     string clearDigits(string s) {
 
         int n = s.size();
-        
-
         deque<char> dq;
 
         string ans = "";
@@ -34,3 +32,4 @@ public:
         
     }
 };
+
