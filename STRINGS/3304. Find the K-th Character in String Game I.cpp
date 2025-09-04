@@ -4,6 +4,8 @@ public:
         
         string word = "a";
 
+        string str = "";
+
         while(word.size() < k){
 
             string temp = word;
@@ -22,4 +24,5 @@ public:
 
         return word[k-1];
     }
+
 };
