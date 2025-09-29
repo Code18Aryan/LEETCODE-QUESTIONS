@@ -1,7 +1,8 @@
 class Solution {
 public:
     int totalFruit(vector<int>& fruits) {
-        
+
+        // BINARY SEARCH OR SLIDING WINDOW
         unordered_map<int,int> mpp;
         int i=0, j=0, maxiFruit = 0;
         int n = fruits.size();
@@ -28,4 +29,5 @@ public:
 
         return maxiFruit;
     }
+
 };
