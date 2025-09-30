@@ -2,7 +2,7 @@ class Solution {
   public:
     void reverseQueue(queue<int> &q) {
         
-        // 1st Approach using stack
+         1st Approach using stack
         
         /*
         
