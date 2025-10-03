@@ -1,3 +1,5 @@
+Question Link - https://leetcode.com/problems/trapping-rain-water-ii/?envType=daily-question&envId=2025-10-03
+
 class Solution {
 public:
 
@@ -55,4 +57,5 @@ public:
 
         return waterCapacity;
     }
+
 };
