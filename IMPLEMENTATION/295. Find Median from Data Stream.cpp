@@ -1,3 +1,6 @@
+// Ques Link - https://leetcode.com/problems/find-median-from-data-stream/description/
+
+
 class MedianFinder {
 public:
 
@@ -45,4 +48,5 @@ public:
  * MedianFinder* obj = new MedianFinder();
  * obj->addNum(num);
  * double param_2 = obj->findMedian();
+
  */
