@@ -22,6 +22,8 @@ public:
             int nr = row + dr[i];
             int nc = col + dc[i];
 
+            // Check the Adjacent island  >= to the current island, if yes then visit it 
+
             if(isValid(nr,nc,n,m) && heights[nr][nc] >= prev && !vis[nr][nc]){
 
                 canVisit(nr,nc,heights[nr][nc],heights,vis,n,m);
@@ -42,17 +44,25 @@ public:
         vector<vector<int>> pacific(n,vector<int>(m,0));
         vector<vector<int>> atlantic(n,vector<int>(m,0));
 
+        // The Above 2D  Matrix acts as a visited array for the given two oceans
+
+        // Start visiting the top and bottom 
+
         for(int i=0; i<m; i++){
 
             canVisit(0,i,heights[0][i],heights,pacific,n,m);
             canVisit(n-1,i,heights[n-1][i],heights,atlantic,n,m);
         }
 
+        // Left and right side 
+
         for(int i=0; i<n; i++){
 
             canVisit(i,0,heights[i][0],heights,pacific,n,m);
             canVisit(i,m-1,heights[i][m-1],heights,atlantic,n,m);
         }
+
+        // Check if an island can visit both the ocean 
 
         for(int i=0; i<n; i++){
 
@@ -69,3 +79,4 @@ public:
     }
 
 };
+
