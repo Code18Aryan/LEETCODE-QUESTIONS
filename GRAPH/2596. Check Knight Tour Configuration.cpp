@@ -1,3 +1,5 @@
+// gfg - https://www.geeksforgeeks.org/problems/the-knights-tour-problem/1
+// leet - https://leetcode.com/problems/check-knight-tour-configuration/description/
 class Solution {
   public:
   
