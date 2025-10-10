@@ -1,3 +1,5 @@
+// Ques Link - https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/?envType=daily-question&envId=2025-10-10
+
 class Solution {
 public:
 
@@ -56,4 +58,5 @@ public:
 
         return maxEnergy;
     }
+
 };
