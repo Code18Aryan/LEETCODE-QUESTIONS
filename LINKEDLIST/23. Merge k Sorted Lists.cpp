@@ -8,6 +8,9 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+// Ques Link - https://leetcode.com/problems/merge-k-sorted-lists/description/
+
 class Solution {
 public:
 
@@ -44,4 +47,5 @@ public:
 
         return newHead -> next;
     }
+
 };
