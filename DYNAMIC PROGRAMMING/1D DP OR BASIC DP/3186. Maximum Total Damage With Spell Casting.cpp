@@ -1,3 +1,6 @@
+// Ques Link - https://leetcode.com/problems/maximum-total-damage-with-spell-casting/?envType=daily-question&envId=2025-10-11
+
+
 class Solution {
 public:
 
@@ -26,4 +29,5 @@ public:
 
         return findMaxPower(0,power.size(),power,dp,mpp);
     }
+
 };
