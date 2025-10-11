@@ -6,6 +6,8 @@ public:
 
     typedef long long ll;
 
+    // Top Down plus recursion
+
     ll findMaxPower(int i, int n, vector<int>&power, vector<ll>&dp, unordered_map<ll,ll>&mpp){
         
         if(i >= n) return 0;
@@ -27,7 +29,22 @@ public:
         sort(power.begin(),power.end());
         vector<ll> dp(power.size(),-1);
 
-        return findMaxPower(0,power.size(),power,dp,mpp);
+        // return findMaxPower(0,power.size(),power,dp,mpp);
+
+        // Bottom Up Approach 
+
+        for(int i=n-1; i>=0; i--){
+
+            ll notTake = (i + 1 < n) ? dp[i+1] : 0;
+
+            int nextElement = lower_bound(power.begin()+i+1,power.end(), power[i] + 3) - power.begin();
+            ll take = power[i] * mpp[power[i]] + ((nextElement < n) ? dp[nextElement] : 0);
+
+            dp[i] = max(take,notTake);
+        }
+
+        return dp[0];
     }
 
 };
+
