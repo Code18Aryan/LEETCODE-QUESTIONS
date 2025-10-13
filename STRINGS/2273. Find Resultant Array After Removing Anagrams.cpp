@@ -56,3 +56,51 @@ public:
         return ans;
     }
 };
+
+
+
+
+
+// Another space optimized code using without deque
+
+class Solution {
+public:
+
+    bool isAnagram(string &a , string &b){
+
+        unordered_map<char,int> mpp;
+
+        for(auto x : a) mpp[x]++;
+
+        for(auto x : b){
+
+            mpp[x]--;
+
+            if(mpp[x] == 0) mpp.erase(x);
+        }
+
+        return mpp.empty();
+    }
+
+    vector<string> removeAnagrams(vector<string>& words) {
+        
+        vector<string> ans;
+
+        for(auto x : words){
+
+            if(ans.empty()) ans.push_back(x);
+            
+            else{
+
+                if(!ans.empty() && isAnagram(ans.back(),x)){
+
+                    continue;
+                }
+
+                else ans.push_back(x);
+            }
+        }
+
+        return ans;
+    }
+};
