@@ -1,6 +1,8 @@
 class Solution {
 public:
 
+    // This problem is based on 0/1 knapsack where for a given instance,I can pick or notpick
+
     int findMax(int index, vector<int>&nums, vector<int> &dp){
 
         if(index == 0) return nums[0];
@@ -39,4 +41,5 @@ public:
         return dp[n];
         
     }
+
 };
