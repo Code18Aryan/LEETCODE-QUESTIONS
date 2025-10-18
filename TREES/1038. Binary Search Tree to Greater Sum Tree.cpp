@@ -9,6 +9,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+// QuesLink - https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/description/
 class Solution {
 public:
 
@@ -32,4 +34,5 @@ public:
 
         return root;
     }
+
 };
