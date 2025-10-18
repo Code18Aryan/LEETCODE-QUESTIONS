@@ -11,6 +11,8 @@ class Node {
 };
 */
 
+// GFG Question Link - https://www.geeksforgeeks.org/problems/median-of-bst/1
+
 class Solution {
   public:
     
