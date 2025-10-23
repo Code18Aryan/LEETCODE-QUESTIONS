@@ -1,3 +1,5 @@
+//Ques Link - https://leetcode.com/problems/k-closest-points-to-origin/description/
+
 class Solution {
 public:
 
@@ -28,4 +30,5 @@ public:
        
        return ans;
     }
+
 };
