@@ -10,6 +10,9 @@ problem link - https://leetcode.com/problems/path-sum/
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+// From Root to leaf Node
+
 class Solution {
 public:
 
@@ -42,4 +45,5 @@ public:
         return findPath(root,0,targetSum);
         
     }
+
 };
