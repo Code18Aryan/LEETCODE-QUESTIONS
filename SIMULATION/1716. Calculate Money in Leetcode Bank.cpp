@@ -1,3 +1,5 @@
+//Ques Link - https://leetcode.com/problems/minimum-operations-to-halve-array-sum/description/
+
 class Solution {
 public:
     int totalMoney(int n) {
@@ -27,4 +29,5 @@ public:
 
         return totalMoney;
     }
+
 };
