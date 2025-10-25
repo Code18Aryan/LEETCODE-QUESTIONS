@@ -1,3 +1,5 @@
+//Ques Link - https://leetcode.com/problems/minimum-operations-to-halve-array-sum/description/
+
 class Solution {
 public:
     int halveArray(vector<int>& nums) {
@@ -30,4 +32,5 @@ public:
 
         return count;
     }
+
 };
