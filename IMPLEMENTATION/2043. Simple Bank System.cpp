@@ -1,3 +1,5 @@
+// Ques Link - https://leetcode.com/problems/simple-bank-system/description/?envType=daily-question&envId=2025-10-26
+
 class Bank {
 public:
 
@@ -50,4 +52,5 @@ public:
  * bool param_1 = obj->transfer(account1,account2,money);
  * bool param_2 = obj->deposit(account,money);
  * bool param_3 = obj->withdraw(account,money);
+
  */
