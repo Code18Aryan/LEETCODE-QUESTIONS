@@ -16,6 +16,8 @@ public:
     
     bool transfer(int account1, int account2, long long money) {
 
+        // If either of the two accounts does not exist, return false
+
         if(account1 > n  || account2 > n) return false;
         
         if(balance[account1 - 1] < money) return false;
@@ -54,3 +56,4 @@ public:
  * bool param_3 = obj->withdraw(account,money);
 
  */
+
