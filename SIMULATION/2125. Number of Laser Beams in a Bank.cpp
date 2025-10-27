@@ -1,3 +1,4 @@
+// Ques Link - https://leetcode.com/problems/number-of-laser-beams-in-a-bank/?envType=daily-question&envId=2025-10-27
 class Solution {
 public:
     int numberOfBeams(vector<string>& bank) {
@@ -31,4 +32,5 @@ public:
         return totalBeam;
 
     }
+
 };
