@@ -1,3 +1,5 @@
+// Ques Link - https://leetcode.com/problems/make-array-elements-equal-to-zero/description/?envType=daily-question&envId=2025-10-28
+
 class Solution {
 public:
     int countValidSelections(vector<int>& nums) {
@@ -25,4 +27,5 @@ public:
 
         return cnt;
     }
+
 };
