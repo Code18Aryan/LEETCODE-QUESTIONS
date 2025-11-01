@@ -1,15 +1,13 @@
+// Link - https://leetcode.com/problems/course-schedule-ii/description/
+
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
 
         int n = numCourses;
-
         vector<int> topoSort;
-
         vector<int> adj[n];
-
         queue<int> q;
-
         vector<int> indegree(n,0);
 
         for(auto x : prerequisites){
@@ -55,4 +53,5 @@ public:
 
         
     }
+
 };
