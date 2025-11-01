@@ -1,3 +1,5 @@
+// link - https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -33,4 +35,5 @@ public:
 
         return newHead -> next;
     }
+
 };
