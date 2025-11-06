@@ -1,3 +1,5 @@
+// Ques Link - https://leetcode.com/problems/power-grid-maintenance/?envType=daily-question&envId=2025-11-06
+
 class Solution {
 public:
 
@@ -71,4 +73,5 @@ public:
 
         return ans;
     }
+
 };
