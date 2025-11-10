@@ -1,3 +1,4 @@
+// Ques Link - https://leetcode.com/problems/shortest-common-supersequence/description/
 class Solution {
 public:
     string shortestCommonSupersequence(string s, string t) {
@@ -33,4 +34,5 @@ public:
         reverse(ans.begin(), ans.end());
         return ans;
     }
+
 };
