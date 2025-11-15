@@ -1,3 +1,5 @@
+// Ques Link - https://leetcode.com/problems/minimum-cost-to-cut-a-stick/description/
+
 class Solution {
 
 private:
@@ -66,4 +68,5 @@ public:
 
         return dp[1][size];
     }
+
 };
