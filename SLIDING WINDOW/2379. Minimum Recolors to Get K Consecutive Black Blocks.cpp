@@ -1,4 +1,4 @@
-class Solution {
+class Solution { // Ho
 public:
     int minimumRecolors(string blocks, int k) {
         
@@ -30,4 +30,5 @@ public:
 
         return mini;
     }
+
 };
