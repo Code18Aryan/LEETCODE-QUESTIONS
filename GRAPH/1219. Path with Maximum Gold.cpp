@@ -1,3 +1,5 @@
+// Ques Link - https://leetcode.com/problems/path-with-maximum-gold/
+
 class Solution {
 public:
 
@@ -51,4 +53,5 @@ public:
 
         return maxGold;
     }
+
 };
