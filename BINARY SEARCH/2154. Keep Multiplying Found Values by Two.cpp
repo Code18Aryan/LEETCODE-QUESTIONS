@@ -1,3 +1,4 @@
+// Ques Link = https://leetcode.com/problems/keep-multiplying-found-values-by-two/description/?envType=daily-question&envId=2025-11-19
 class Solution {
 public:
     int findFinalValue(vector<int>& nums, int original) {
@@ -16,4 +17,5 @@ public:
 
         return original;
     }
+
 };
