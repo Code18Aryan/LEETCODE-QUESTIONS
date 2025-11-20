@@ -1,3 +1,5 @@
+// Ques Link - https://www.geeksforgeeks.org/problems/make-strings-equal--150209/1
+
 class Solution {
   public:
     
