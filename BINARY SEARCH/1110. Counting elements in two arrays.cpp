@@ -1,6 +1,7 @@
 class Solution {
   public:
-    
+    // using binary search
+
     int findElement(vector<int>&nums, int element){
         
         int low = 0;
