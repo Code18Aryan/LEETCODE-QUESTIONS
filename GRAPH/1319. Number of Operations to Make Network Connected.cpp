@@ -1,7 +1,9 @@
+// QuesLink - https://leetcode.com/problems/number-of-operations-to-make-network-connected/description/
+
+
 class DSU{
 
     public:
-
     vector<int> parent,size;
 
     DSU(int n){
@@ -50,9 +52,7 @@ public:
     int makeConnected(int n, vector<vector<int>>& connections) {
 
         int extraEdge = 0;
-
         int component = 0;
-
         DSU disjoint(n);
 
         for(auto x : connections){
@@ -75,13 +75,13 @@ public:
         }
 
         int requiredComp = component-1;
-
+        
         if(extraEdge >= requiredComp){
-
             return requiredComp;
         }
 
        return -1;
 
     }
+
 };
