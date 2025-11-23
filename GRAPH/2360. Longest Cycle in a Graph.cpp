@@ -1,3 +1,4 @@
+// Ques Link - https://leetcode.com/problems/longest-cycle-in-a-graph/description/
 class Solution {
 public:
 
@@ -55,4 +56,5 @@ public:
 
         return ans;
     }
+
 };
