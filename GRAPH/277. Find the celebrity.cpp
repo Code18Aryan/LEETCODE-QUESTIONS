@@ -1,3 +1,5 @@
+// Ques Link = https://www.geeksforgeeks.org/problems/the-celebrity-problem/1
+
 class Solution {
   public:
     int celebrityy(vector<vector<int>>& mat) {
