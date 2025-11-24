@@ -1,3 +1,5 @@
+// Ques Link - https://www.geeksforgeeks.org/problems/second-best-minimum-spanning-tree/1
+
 class DSU{
     
     public:
