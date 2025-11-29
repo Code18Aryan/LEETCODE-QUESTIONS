@@ -1,5 +1,6 @@
 class Solution {
-public:
+public:   
+// uing max heap
     int maxScoreSightseeingPair(vector<int>& values) {
 
         priority_queue<int> pq;
