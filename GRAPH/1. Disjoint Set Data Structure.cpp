@@ -1,5 +1,6 @@
-class DSU{
+//   DSU stands for disjoint set data structure, which is widely used in solving graph problems, mainly dealing with components 
 
+class DSU{
     public:
 
     vector<int> parent,size;
@@ -84,4 +85,5 @@ public:
        return -1;
 
     }
+
 };
