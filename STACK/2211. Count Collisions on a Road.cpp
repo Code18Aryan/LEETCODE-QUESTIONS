@@ -1,3 +1,4 @@
+// Ques Link = https://leetcode.com/problems/count-collisions-on-a-road/description/?envType=daily-question&envId=2025-12-04
 class Solution {
 public:
     int countCollisions(string directions) {
@@ -52,4 +53,5 @@ public:
 
         return cnt;
     }
+
 };
