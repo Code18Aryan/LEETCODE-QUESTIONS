@@ -16,7 +16,7 @@ public:
         vector<int>distance(n,1e9);
         distance[src] = 0;
 
-        queue<pair<int,pair<int,int>>>q;
+        queue<pair<int,pair<int,int>>>q; // We dont need min heap as we judge on the basis of stops and stops increase one by one 
         q.push({0,{src,0}});
 
         while(!q.empty()){
@@ -45,4 +45,5 @@ public:
 
         return distance[dst] == 1e9 ? -1 : distance[dst];
     }
+
 };
