@@ -1,3 +1,5 @@
+// Ques Link - https://leetcode.com/problems/find-all-people-with-secret/?envType=daily-question&envId=2025-12-19
+
 class Solution {
 public:
 
@@ -47,4 +49,5 @@ public:
 
         return ans;
     }
+
 };
