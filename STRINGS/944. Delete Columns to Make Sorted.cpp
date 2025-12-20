@@ -1,3 +1,5 @@
+// Ques Link - https://leetcode.com/problems/delete-columns-to-make-sorted/description/?envType=daily-question&envId=2025-12-20
+
 class Solution {
 public:
     int minDeletionSize(vector<string>& strs) {
@@ -19,4 +21,5 @@ public:
 
         return cnt;
     }
+
 };
