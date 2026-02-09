@@ -1,72 +1,16 @@
-
-  
-  #include<bits/stdc++.h>
-  using namespace std;
-
-
-  class TreeNode{
-     
-     public:
-
-     int val;
-     TreeNode* left;
-     TreeNode* right;
-
-     TreeNode( int val){
-         
-         this -> val = val;
-         this -> left = NULL;
-         this -> right = NULL;
-     }
-  };
-
-
-
-    class Solution {
-
-    public:
-
-    vector<vector<int>> bfs(TreeNode* root){
-         
-         vector<vector<int>> ans;
-
-         if( root == NULL) return ans;
-
-         queue<TreeNode*> q;
-         q.push(root);
-
-         while( !q.empty()){
-             
-              int size = q.size();
-              vector<int>level;
-
-              for(int i=0; i<size; i++){
-                 
-                  TreeNode* node = q.front();
-                  q.pop();
-
-                  if( node -> left != NULL) q.push(node -> left);
-                  if( node -> right != NULL) q.push(node -> right);
-
-                  level.push_back(node -> val);
-              }
-
-              ans.push_back(level);
-         }
-
-         return ans;
-    }
-
-
-    void print(vector<int>&nums){
-         
-          for(auto x : nums){
-             
-              cout<<x<<" ";
-          }
-
-          cout<<endl;
-    }
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
 
     void inorder(TreeNode* root , vector<int>&nums){
          
@@ -107,32 +51,3 @@
         
     }
 };
-
-
-
-
-   int main(){
-     
-      TreeNode* root = new TreeNode(1);
-      root -> right = new TreeNode(2);
-      root -> right -> right = new TreeNode(3);
-      root -> right -> right -> right = new TreeNode(4);   
-
-
-      Solution leetcode;
-
-      TreeNode* ansRoot = leetcode.balanceBST(root);
-
-      vector<vector<int>> levelOrder = leetcode.bfs(ansRoot);
-
-      for(auto x : levelOrder){
-         
-          leetcode.print(x);
-
-      }
-
-
-
-
-
-   }
