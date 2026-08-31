@@ -14,6 +14,7 @@ public:
         
         if(head == NULL) return {-1,-1};
 
+        // first store nodes value into vector then check the condition for valid minima and maxima after that change the minimum diff by checking adjacent index value 
         ListNode* temp = head;
         vector<int> nodes;
         vector<int> indices;
